@@ -40,8 +40,17 @@
   height: 700px;
 }
 .caption {
-  color: #999999;
+  color: #ffefab;
   font-size: 15px;
   margin-top: 10px;
   text-align: center;
+}
+.text-center {
+  color: #fff;
+}
+label {
+  color: #ffefab;
+}
+.form-control {
+  background-color:  #fff3eb;
 }

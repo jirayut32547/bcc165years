@@ -5,7 +5,7 @@ import template from './template.png';
 
 class App extends Component {
   state = {
-    text1: 'ครบรอบ 76 ปี รอตะลับวันนี้ได้นั่งชาติหน้า',
+    text1: 'ครบรอบ 165 ปี "ม่วงทองผ่องอำไพ"',
     font1: 20,
     image: '',
     renderedImage: ''
@@ -19,12 +19,12 @@ class App extends Component {
     return (
       <div className="container" style={{maxWidth: '700px'}}>
         <h1 className="text-center title">
-          สร้างรูปโปรไฟล์ครบรอบ 76 ปี KU
+          สร้างรูปโปรไฟล์ครบรอบ 165 ปี BCC
         </h1>
         <h2 className="caption">แนะนำให้ใช้งานด้วย Chrome บนคอมพิวเตอร์</h2>
         <div className="row edit-section">
           <div className="form-group">
-            <label>
+            <label classNamw="upload-text">
               อัพโหลดรูปภาพ:
             </label>
             <input className="form-control" type="file" accept="image/*" onChange={(e) => {
@@ -69,7 +69,7 @@ class App extends Component {
         }
         { this.state.renderedImage && this.state.renderedImage !== '' &&
           <div className="text-center form-group">
-            <a className="btn btn-lg btn-primary" href={this.state.renderedImage} download="ku76.png"
+            <a className="btn btn-lg btn-primary" href={this.state.renderedImage} download="bcc165.jpg"
             >ดาวน์โหลด</a>
           <p className="caption">หากภาพที่ดาวโหลดมีปัญหา<br/>สามารถใช้การ Capture หน้าจอได้</p>
           </div>
