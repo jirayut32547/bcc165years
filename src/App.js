@@ -24,7 +24,7 @@ class App extends Component {
         <h2 className="caption">แนะนำให้ใช้งานด้วย Chrome บนคอมพิวเตอร์</h2>
         <div className="row edit-section">
           <div className="form-group">
-            <label classNamw="upload-text">
+            <label>
               อัพโหลดรูปภาพ:
             </label>
             <input className="form-control" type="file" accept="image/*" onChange={(e) => {
