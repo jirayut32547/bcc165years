@@ -5,7 +5,7 @@ import template from './template.png';
 
 class App extends Component {
   state = {
-    text1: 'ครบรอบ 165 ปี "ม่วงทองผ่องอำไพ"',
+    // text1: 'ครบรอบ 165 ปี "ม่วงทองผ่องอำไพ"',
     font1: 20,
     image: '',
     renderedImage: ''
@@ -37,7 +37,7 @@ class App extends Component {
               }
             }} />
           </div>
-          {
+          {/* {
             this.state.image && this.state.image !== '' &&
             <div className="form-group">
               <label>
@@ -46,7 +46,7 @@ class App extends Component {
               <input className="form-control" type="text" placeholder="quote 1" value={this.state.text1}
                 onChange={(e) => this.setState({ text1: e.target.value }, this.renderImage)} />
             </div>
-          }
+          } */}
 
         </div>
         <hr />
@@ -56,12 +56,12 @@ class App extends Component {
           { this.state.image && this.state.image !== '' &&
             <img className="template" alt="background" src={template} />
           }
-          <div className="text-area">
+          {/* <div className="text-area">
             <p className="big text small-line"
               style={{fontSize: `${this.state.font1}px`}}
               >
               {this.state.text1}</p>
-          </div>
+          </div> */}
         </div>
         {
           this.state.image !== '' && this.state.renderedImage === '' &&
